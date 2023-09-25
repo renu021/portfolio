@@ -1,13 +1,72 @@
-*{
+
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@1&family=Mooli&family=Outfit:wght@300;400;700;800&family=Poppins:ital,wght@0,100;0,700;1,300;1,500;1,600&family=Roboto+Condensed:ital,wght@0,400;1,300;1,400&family=Roboto+Flex:opsz@8..144&display=swap');
+
+
+/* global variable */
+:root{
+    --dark-primary:#061621;
+    --dark-secondary:rgb(15, 229, 154);
+    --dark-pink:rgb(233, 12, 119);
+}
+ 
+ 
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: 'Outfit', sans-serif;
+} 
 
 header{
-    background-color: #1dddbd; 
-    padding: 5px 10px;        /*  Top Right Bottom Left  (OR) TB  RF  (OR)  TRBL */
-    color: white;         /* it only affect my Renuka devi */
-    /* display: flex; */
-    justify-content: space-between;
+    background-color:var(--dark-primary) ;
+    padding: 15px 20px;
+    color: #fff;
+    display: flex; 
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+header .logo{
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--dark-pink)
+}
+
+ul{
+    display:flex;
+    list-style: none;
+}
+
+ul,li > a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 80px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+ul,li, a:hover{
+    color: var(--dark-pink) ;
+}
+
+     /* header >Button */
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: Bolder;
+    border: 2px solid var(--dark-primary);
+    color: #fff;
+    background-color: var(--dark-pink);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(8, 213, 245);
+    color: var(--dark-primary);
 }
