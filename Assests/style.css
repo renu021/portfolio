@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #1dddbd; 
+    padding: 5px 10px;        /*  Top Right Bottom Left  (OR) TB  RF  (OR)  TRBL */
+    color: white;         /* it only affect my Renuka devi */
+    /* display: flex; */
+    justify-content: space-between;
+}
